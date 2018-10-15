@@ -1,127 +1,79 @@
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="content-language" content="en-gb">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <title>Aora Installer</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
- 
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  </head>
-  <style>
-
-    body {
-      background: linear-gradient(0deg, rgb(25,25, 25), rgb(30, 30, 30));
-      color: white;
-      font-family: 'Open Sans', sans-serif;
-      padding-top: 100px !important;
-      max-width: 980px;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      text-align: center;
-      display: none;
+<!DOCTYPE html>
+<html lang="en" style="background-color: #1f7de7;">
+<Style>
+    @font-face{
+        font-family: Bold;
+        src: url(./SF-Pro-Text-Heavy.otf);
     }
-
-    .credits-top {
-      font-size: 0.80em;
-      padding-right: 10px;
-      padding-left: 10px;
-      color: rgba(255, 255, 255, 0.5);
-
+    .projectsbg{
+        max-width: 100%;
+        max-height: 100%;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        border-radius: 20px;
+        border: 100% solid #333333;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
-    .download-btn {
-
-      color: white;
-      text-decoration:none;
-      background: #1896c65c;
-      box-shadow: 0px 0px 25px #1896c65c;
-      
-      padding-top: 13px !important;
-      padding-right: 40px !important;
-      padding-left: 40px !important;
-      padding-bottom: 13px !important;
-      
-      border-radius: 100px;
-      font-weight: bold;
-
-    }
-
-    .credits-bottom {
-      font-size: 0.9em;
-      padding-top: 100px !important;
-      padding-right: 10px;
-      padding-left: 10px;
-      color: rgba(255, 255, 255, 0.5);
-
-    }
-
-    .installation {
-      display: inline-block;
-      padding: 30px;
-      padding-left: 50px;
-      padding-top: 5px !important;
-      text-align: left;
-      opacity: 1;
-      font-size: 0.9em;
-    }
-
-
-    .dotted-list {
-      display: inline-block;
-      padding: 30px;
-      padding-left: 50px;
-      padding-top: 5px !important;
-      text-align: left;
-      opacity: 0.9;
-      list-style-type: circle;
-      font-size: 0.9em;
-    }
-
-    .warning-message {
-      font-size: 0.7em;
-
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-  .twitter-link {
-      color: rgba(255, 255, 255, 0.5);
-        text-decoration: underline;
-    }
-  </style>
-
-
-  <body>
-
-    <p>Jailbreak Package Installer</p>
-    <p>Developed By The Aora Team</p
-    <p> </p>    
-    <div style="padding-top: 100px;"> 
-      <a class="download-btn" rel="nofollow">Not Released</a>
+    .pin-widget-dark {
+  position: relative;
+  z-index: 10;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(31,125,231,0.6);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  color: #fff;
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.pinwheeler {
+  transform: translateY(-200%);
+  transform-delay: 1s;
+  transition: transform 0.6s ease-in-out;
+  padding: 10px;
+}
+.pinwheeler-active {
+  transform: translateY(0%);
+}
+.packTitle{
+  font-family: Bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+</Style>
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aora</title>
+</head>
+<body>
+    <h1 style="font-family: Bold; font-size: 25px; color: #ffffff">Featured Packages</h1>
+    <div>
+        <div class="projectsbg" style="border-top: 0px solid #ffffff; padding-bottom: 20px; padding-top: 20px;">
+        <div class="pinwheeler pinwheeler-active pin-widget-dark">
+                <div class="pin-top">
+                    <center>
+                        <div class="packTitle" ">Aora</div>
+                    </center>
+                </div>
+                <div class="pin-top">
+                    <center><img src="aora/Aorapromotion.png" style="height: 100%; width: 100%;border-radius: 20px;"></center>
+                </div>
+        </div>
+        </div>
+        <div class="projectsbg" style="border-top: 0px solid #ffffff; padding-bottom: 20px; padding-top: 20px;">
+        <div class="pinwheeler pinwheeler-active pin-widget-dark">
+                <div class="pin-top">
+                    <center>
+                        <div class="packTitle">Serendipity</div>
+                    </center>
+                </div>
+                <div class="pin-top">
+                    <center><img src="aora/Serendipitypromotion.png" style="height: 100%; width: 100%; border-radius: 15px;"></center>
+                </div>
+        </div>
+        </div>
     </div>
-
-    <h2 style="padding-top: 10px; opacity: 0.9">Installation</h2>
-    <ol class="installation">
-      <li>Open Cydia And Install The Aora Repo On Your Device </li>
-      <li>Open The Source And Tap On Tools</li>
-      <li>Install Aora From The List Of Packages</li>
-      <li>If You Have Any Errors Please Contact @AoraInstaller On Twitter</li>
-      <li>When Aora Is Done Installing Go To The Homescreen And Open It</li>
-      <li>Aora Should Prepare Itself From There</li>
-      <li>Done (^-^)</li>
-    </ol>
-
-
-
 </body>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('body').fadeIn('slow');
-});
-</script>
-
 </html>
